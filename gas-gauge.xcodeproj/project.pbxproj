@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		ACB146131D13060E006D819E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = ACB146121D13060E006D819E /* main.m */; };
+		ACB146311D1308AE006D819E /* IOKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ACB146301D1308AE006D819E /* IOKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +26,7 @@
 /* Begin PBXFileReference section */
 		ACB1460F1D13060E006D819E /* gas-gauge */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "gas-gauge"; sourceTree = BUILT_PRODUCTS_DIR; };
 		ACB146121D13060E006D819E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		ACB146301D1308AE006D819E /* IOKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IOKit.framework; path = System/Library/Frameworks/IOKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -32,6 +34,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ACB146311D1308AE006D819E /* IOKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -41,6 +44,7 @@
 		ACB146061D13060E006D819E = {
 			isa = PBXGroup;
 			children = (
+				ACB146301D1308AE006D819E /* IOKit.framework */,
 				ACB146111D13060E006D819E /* gas-gauge */,
 				ACB146101D13060E006D819E /* Products */,
 			);
@@ -210,6 +214,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
 			};
 			name = Debug;
 		};
@@ -217,6 +222,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
 			};
 			name = Release;
 		};
@@ -239,6 +245,7 @@
 				ACB146181D13060E006D819E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
